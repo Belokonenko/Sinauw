@@ -1,0 +1,18 @@
+.hero {
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        border: 1px solid red;
+    }
+    &__baner {
+        border: 1px solid red;
+        background-image: url("../img/hero-bg-2.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        margin-left: -50px;
+    }
+    &__title {
+        font-size: 56px;
+        opacity: .8;
+    }
+}
