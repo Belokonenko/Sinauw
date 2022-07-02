@@ -1,33 +1,53 @@
-<section class="hero ">
-  <div class="hero__wrap container">
-    <div class="hero__baner">
-      <ul>
-        <li><img src="img/hero__user-1.jpg" alt=""></li>
-        <li><img src="img/hero__user-2.jpg" alt=""></li>
-        <li><img src="img/hero__user-3.jpg" alt=""></li>
-        <li><img src="img/hero__user-4.jpg" alt=""></li>
-        <li><img src="" alt=""></li>
-      </ul>
-      <p>More than 80k+ Students joined!</p>
-    </div>
-    <div>
+<section class="hero">
+  
+<div class="header container">
+  <a class="header__logo" href="#">
+    <img
+     src="img/svg/logo.svg"
+     alt="logo"
+     width="82"
+     height="40">
+  </a>
+  <nav>
+    <ul class="header__nav-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Webinar</a></li>
+      <li><a href="#">Pricing</a></li>
+    </ul>
+  </nav>
+  <button class="header__swich-lang"><span class="btn-eng">Eng</span></button>
+  <button class="header__btn-login">login</button>
+</div>
 
+
+  <div class="hero__wrap  container">
+    <div class="hero__baner">
+      <!-- <ul> -->
+      <!--   <li><img src="img/hero__user-1.jpg" alt=""></li> -->
+      <!--   <li><img src="img/hero__user-2.jpg" alt=""></li> -->
+      <!--   <li><img src="img/hero__user-3.jpg" alt=""></li> -->
+      <!--   <li><img src="img/hero__user-4.jpg" alt=""></li> -->
+      <!--   <li><img src="" alt=""></li> -->
+      <!-- </ul> -->
+      <!-- <p>More than 80k+ Students joined!</p> -->
+    </div>
+
+    <div>
       <h1 class="visually-hidden">Training courses</h1>
       <h2 class="hero__title">Grow Your Skills<br> To Advance Your<br> Career Path.</h2>
-      <p>We have something big for you who want to level up!</p>
-      <form>
-        <label for="mySearch">Search:</label>
-        <input
-            type="search"
-            id="mySearch"
-            name="q"
-            placeholder="What do you want to learn..." required
-            size="30"
-            pattern="[A-z]{2}[0-9]{4}">
-        <button>Search</button>
-      </form>
-      <div>
-        <h3>Suggestions</h3>
+      <p class="hero__sub-title">We have something big for you who want to level up!</p>
+        <form class="form-search">
+          <input class="form-search__input"
+                 type="text"
+                 placeholder="What do you want to learn...">
+          <button class="form-search__btn"
+                  type="submit">
+            <img src="app/img/" alt="">
+          </button>
+        </form>
+      <div class="hero__suggestions">
+        <h3 class="suggestions__title">Suggestions</h3>
         <ul>
           <li><a href="#">UI UX Design</a></li>
           <li><a href="#">CSS Fundamental</a></li>
@@ -38,7 +58,7 @@
         </ul>
       </div>
     </div>
-  </div>
 
+  </div>
 </section>
 

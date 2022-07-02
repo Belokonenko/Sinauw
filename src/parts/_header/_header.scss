@@ -1,46 +1,45 @@
-.header {
-    display: grid;
-    grid-template-columns: 19% 1fr max-content max-content;
-    padding: 20px 0;
-    font-size: .9rem;
-    &__nav-list {
-        display: grid;
-        grid-template-columns: max-content max-content max-content max-content;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        li  {
-            align-self: center;
-            a {
-                margin-right: 45px;
-                text-decoration: none;
-            }
-        }
-    }
-    &__swich-lang{
-        background-color: transparent;
-        border: transparent;
-        color: $color-light;
-        padding: 0.7rem 2rem;
-        .btn-eng {
-            &::after {
-                content: "";
-                width: 18.5px;
-                height: 19px;
-                background-image: url(../img/svg/globe.svg);
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                left: 0.7em;
-            }
-        }
-    }
-    &__btn-login {
-        color: $color-light;
-        padding: 0.7rem 2rem;
-        background-color: $color-main-accent;
-        border-color: $color-main-accent;
-        border-radius: .4em;
-    }
-}
+// .header {
+//     display: grid;
+//     grid-template-columns: 19% 1fr max-content max-content;
+//     font-size: .9rem;
+//     &__nav-list {
+//         display: grid;
+//         grid-template-columns: max-content max-content max-content max-content;
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;
+//         height: 100%;
+//         li  {
+//             align-self: center;
+//             a {
+//                 margin-right: 45px;
+//                 text-decoration: none;
+//             }
+//         }
+//     }
+//     &__swich-lang{
+//         background-color: transparent;
+//         border: transparent;
+//         color: $color-light;
+//         padding: 0.7rem 2rem;
+//         .btn-eng {
+//             &::after {
+//                 content: "";
+//                 width: 18.5px;
+//                 height: 19px;
+//                 background-image: url(../img/svg/globe.svg);
+//                 background-repeat: no-repeat;
+//                 background-position: 50% 50%;
+//                 left: 0.7em;
+//             }
+//         }
+//     }
+//     &__btn-login {
+//         color: $color-light;
+//         padding: 0.7rem 2rem;
+//         background-color: $color-main-accent;
+//         border-color: $color-main-accent;
+//         border-radius: .4em;
+//     }
+// }
 
