@@ -5,7 +5,6 @@
     background-position: left center;
     background-position-y: 3px;
     min-height: 80vh;
-    width: 100%;
     border: 1px solid red;
     .header {
         display: grid;
@@ -53,79 +52,96 @@
             border-radius: .4em;
         }
     }
-
     .hero__wrap {
         display: grid;
         grid-template-columns: 1fr 42%;
-
-    }
-
-
-
-    &__baner {
-        img {
-            margin-left: -110px;
-        }
-    }
-    &__title {
-        font-size: 3.5rem;
-        opacity: .8;
-        margin-top: 130px;
-        margin-bottom: 25px;
-        letter-spacing: -0.9px;
-        line-height: 1.3;
-    }
-    &__sub-title {
-        letter-spacing: 1px;
-        margin-bottom: 3.5em;
-    }
-
-    .form-search {
-        display: grid;
-        grid-template-columns: 1fr max-content;
-        // width: 100%;
-        background-color: #1F2143;
-        outline: transparent;
-        border: transparent;
-        min-height: 68px;
-        margin-bottom: 3.3em;
-        &__input {
-            background-color: transparent;
-            outline: transparent;
-            border: transparent;
-        }
-        &__btn {
-            width: 3em;
-            height: 3em;
-            align-self: center;
-        }
-    }
-    .hero__suggestions {
-        margin-bottom: 10px;
-        .suggestions__title {
-            margin-bottom: 40px;
-            font-size: 1.125rem;
-            letter-spacing: 1;
-            opacity: .4;
-        }
-        & ul {
-            display: flex;
-            flex-wrap: wrap;
-            li {
-                margin-right: 24px ;
-                margin-bottom: 24px;
-                border: 1px solid rgba(154, 156, 203, 0.6);
-                border-radius: 8px;
-
-                &:nth-child(3n+3) {
-                    margin-right: 0;
+        .hero__baner {
+            position: relative;
+            .hero__block-students {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                padding: 1.4em;
+                font-size: .875rem;
+                background: linear-gradient(180deg, rgba(76, 94, 157, 0.8) -32.08%, rgba(23, 24, 54, 0.8) 127.36%);
+                border-radius: 20px;
+                border: 1px solid red;
+                .students__list {
+                    display: flex;
+                    .students__item {
+                        width: 3.7em;
+                        height: 3.7em;
+                        border-radius: 50%;
+                        border: 1px solid #6668AA;
+                        background: #8087B8;
+                        &:not(first-child) {
+                            margin-left: -1em;
+                        }
+                    }
                 }
-                a {
-                    display: inline-block;
-                    padding: .8em 1.08em;
-                    font-size: .785rem;
-                    opacity: .6;
-                    letter-spacing: 1px;
+            }
+        }
+        .hero__description {
+            .hero__title {
+                font-size: 3.5rem;
+                opacity: .8;
+                margin-top: 130px;
+                margin-bottom: 25px;
+                letter-spacing: -0.9px;
+                line-height: 1.3;
+            }
+            .hero__sub-title {
+                margin-bottom: 3.5em;
+                letter-spacing: 1px;
+            }
+            .form-search {
+                display: grid;
+                grid-template-columns: 1fr max-content;
+                background-color: #1F2143;
+                outline: transparent;
+                border: transparent;
+                margin-bottom: 3.3em;
+                &__input {
+                    background-color: transparent;
+                    outline: transparent;
+                    border: transparent;
+                }
+                &__btn {
+                    width: 3em;
+                    height: 3em;
+                    align-self: center;
+                }
+            }
+            .hero__suggestions {
+                margin-bottom: 10px;
+                .suggestions__title {
+                    margin-bottom: 40px;
+                    font-size: 1.125rem;
+                    letter-spacing: 1;
+                    opacity: .4;
+                }
+                & ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    li {
+                        margin-right: 24px ;
+                        margin-bottom: 24px;
+                        border: 1px solid rgba(154, 156, 203, 0.6);
+                        border-radius: 8px;
+
+                        &:nth-child(3n+3) {
+                            margin-right: 0;
+                        }
+                        a {
+                            display: inline-block;
+                            padding: .8em 1.08em;
+                            font-size: .785rem;
+                            opacity: .6;
+                            letter-spacing: 1px;
+                        }
+                    }
                 }
             }
         }
