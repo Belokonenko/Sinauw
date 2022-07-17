@@ -71,14 +71,34 @@
                 .students__list {
                     display: flex;
                     .students__item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         width: 3.7em;
                         height: 3.7em;
                         border-radius: 50%;
                         border: 1px solid #6668AA;
                         background: #8087B8;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        line-height: 0;
+
                         &:not(first-child) {
                             margin-left: -1em;
                         }
+                    }
+                    .user-1 {
+                        background-image: url(../img/hero__user-1.jpg);
+                    }
+                    .user-2 {
+                        background-image: url(../img/hero__user-2.jpg);
+                    }
+                    .user-3 {
+                        background-image: url(../img/hero__user-3.jpg);
+                    }
+                    .user-4 {
+                        background-image: url(../img/hero__user-4.jpg);
                     }
                 }
             }
@@ -109,9 +129,17 @@
                     border: transparent;
                 }
                 &__btn {
+                    align-self: center;
                     width: 3em;
                     height: 3em;
-                    align-self: center;
+                    margin: 1em;
+                    border-radius: 6px;
+                    border: none;
+                    background: #282B57;
+                    background-image: url(../img/svg/search.svg);
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    transform: translate(50% 50%);
                 }
             }
             .hero__suggestions {
