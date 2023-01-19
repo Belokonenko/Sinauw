@@ -1,2 +1,3 @@
-# gulp_master
 # Sinauw
+# Use gulp start npm i
+
